@@ -140,7 +140,7 @@ const FirstPage = () => {
 
               <div className="w-20 h-20 flex items-center justify-center">
                 <img
-                  src="Hand.png"
+                  src="Hand1.png"
                   alt="Hand Icon"
                   className="w-full h-full object-contain"
                 />
