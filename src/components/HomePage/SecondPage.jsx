@@ -7,7 +7,7 @@ const SecondPage = () => {
         {/* Left Side - Steps and Testimonial (8 columns - 2/3) */}
         <div className="lg:col-span-8 p-8 lg:border-r-4 lg:border-[#88B92F]">
           <div className="max-w-3xl mx-auto space-y-8">
-            <img src="Boxes.png" />
+            <img src="Boxes1.png" />
 
             {/* Computer Icon and Testimonial */}
             <div className="flex flex-col lg:flex-row justify-around mt-16 text-center">

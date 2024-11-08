@@ -251,14 +251,42 @@ const ContactForm = () => {
         </div>
 
         {/* Right column - Contact */}
-        <div className="flex-1 flex flex-col">
-          {/* <div className="flex  items-end md:justify-end sm:none md:block">
-            <img src="./logo.png" className="text-white w-48 self-end" />
-          </div> */}
+        {/* <div className="flex-1 flex flex-col">
+     
           <div className="flex mb-8 w-full">
             <img
               src="./moneyflow.png"
-              className="w-full max-w-[300px] mt-20 mx-auto"
+              className="w-full max-w-[300px] mt-20 -ml-5 mx-auto"
+            />
+          </div>
+          <h2 className="text-4xl font-bold mb-4">
+            Contact <span className="text-[#88b92f]">us</span>
+          </h2>
+          <p className="text-gray-300 mb-8">
+            For questions and technical assistance on this promotion please
+            contact us via the contact information provided below.
+          </p>
+
+          <div className="space-y-4 w-full">
+            <div className="flex items-center gap-3">
+              <Phone className="text-[#88b92f]" />
+              <span>+44(0) 7307577966</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <Mail className="text-[#88b92f]" />
+              <span>support@quick-funded.io</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <MapPin className="text-[#88b92f]" />
+              <span>128 City Road LONDON EC1V 2NX UNITED KINGDOM</span>
+            </div>
+          </div>
+        </div> */}
+        <div className="flex-1 flex flex-col">
+          <div className="flex mb-8 w-full justify-center md:justify-end">
+            <img
+              src="./moneyflow.png"
+              className="w-full max-w-[300px] mt-20 mx-auto md:ml-0"
             />
           </div>
           <h2 className="text-4xl font-bold mb-4">
