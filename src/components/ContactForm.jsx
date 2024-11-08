@@ -283,10 +283,10 @@ const ContactForm = () => {
           </div>
         </div> */}
         <div className="flex-1 flex flex-col">
-          <div className="flex mb-8 w-full justify-center md:justify-end">
+          <div className="flex mb-6 w-full justify-center md:justify-end ">
             <img
               src="./moneyflow.png"
-              className="w-full max-w-[300px] mt-20 mx-auto md:ml-0"
+              className="w-full max-w-[300px] mt-20 mx-auto md:mr-0 pt-10"
             />
           </div>
           <h2 className="text-4xl font-bold mb-4">
