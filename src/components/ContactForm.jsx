@@ -96,7 +96,7 @@ const ContactForm = () => {
 
       <div className="relative top-0 z-10 w-screen max-w-[1320px] mx-auto px-4 py-8 flex flex-col md:flex-row gap-8 md:gap-12">
         {/* Left column - Form */}
-        <div className="flex-1 ">
+        {/* <div className="flex-1 ">
           <div className="flex">
             <div>
               <h1 className="text-5xl font-bold mb-4">
@@ -116,6 +116,98 @@ const ContactForm = () => {
     "
               />
             </div>
+          </div> */}
+
+        {/* <div className="flex-1">
+          <div className="flex flex-col sm:flex-row sm:items-start relative">
+            <div className="flex-1">
+              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+                It begins <span className="text-[#88b92f]">here</span>!
+              </h1>
+              <p className="mb-8 text-gray-300">
+                Fill in your details below to begin your future as a career
+                trader with Quick Funded.
+              </p>
+            </div>
+
+            <div className="sm:absolute sm:right-0 sm:top-0 self-center sm:self-start mb-6 sm:mb-0">
+              <img
+                src="./logo.png"
+                className="w-32 sm:w-36 md:w-40 lg:w-48"
+                alt="Quick Funded Logo"
+              />
+            </div>
+          </div> */}
+
+        {/* <div className="flex-1">
+          <div className="flex flex-wrap justify-between items-start gap-4">
+            <div className="flex-1 min-w-[200px]">
+              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+                It begins <span className="text-[#88b92f]">here</span>!
+              </h1>
+              <p className="mb-8 text-gray-300">
+                Fill in your details below to begin your future as a career
+                trader with Quick Funded.
+              </p>
+            </div>
+
+            <div className="flex-shrink-0">
+              <img
+                src="./logo.png"
+                className="w-24 sm:w-32 md:w-40 lg:w-48"
+                alt="Quick Funded Logo"
+              />
+            </div>
+          </div> */}
+
+        {/* <div className="flex-1">
+          <div className="relative flex flex-wrap items-start sm:items-center sm:flex-nowrap">
+            <div className="flex-1">
+              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+                It begins <span className="text-[#88b92f]">here</span>!
+              </h1>
+              <p className="mb-8 text-gray-300">
+                Fill in your details below to begin your future as a career
+                trader with Quick Funded.
+              </p>
+            </div>
+
+            <div className="flex-shrink-0 ml-auto">
+              <img
+                src="./logo.png"
+                className="w-24 sm:w-32 md:w-[150px] lg:w-[200px]"
+                alt="Quick Funded Logo"
+              />
+            </div>
+          </div> */}
+
+        <div className="flex-1">
+          <div className="flex justify-between items-start">
+            <div>
+              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
+                It begins <span className="text-[#88b92f]">here</span>!
+              </h1>
+              <p className="mb-8 text-gray-300">
+                Fill in your details below to begin your future as a career
+                trader with Quick Funded.
+              </p>
+            </div>
+
+            <div className="absolute right-4">
+              <img
+                src="./logo.png"
+                className="text-white 
+      max-w-[150px] lg:max-w-80 md:max-w-48 sm:max-w-[150px]
+    "
+              />
+            </div>
+            {/* <div className="flex-shrink-0">
+              <img
+                src="./logo.png"
+                className="w-24 sm:w-32 md:w-48 lg:w-[150px] xl:w-[180px]"
+                alt="Quick Funded Logo"
+              />
+            </div> */}
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
