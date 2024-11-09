@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 
 const FirstPage = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="WebsiteBGL.png"
           alt="placeholder"
-          className="w-full min-h-[800px] h-full object-cover"
+          className="w-full max-h-full object-cover"
         />
       </div>
+
       <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 lg:px-8 py-8">
         {/* Header Section */}
         <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-4 mb-8">
