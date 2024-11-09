@@ -21,7 +21,7 @@ const SecondPage = () => {
                   <br /> levels."
                   <br />
                 </blockquote>
-                <p className="text-gray-500 text-2xl">-Charlie Anderrson</p>
+                <p className="text-gray-500 text-2xl">-Charlie Anderson</p>
               </div>
               <div className="justify-center mt-8 lg:mt-0">
                 <img
