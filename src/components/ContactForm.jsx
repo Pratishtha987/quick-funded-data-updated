@@ -2,8 +2,12 @@ import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import CountryDropdown from "./CountryDropdown";
 import TermsAndConditionsModal from "./TermsAndConditionsModal";
+import { Link, useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  // const Navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -82,6 +86,11 @@ const ContactForm = () => {
     } finally {
       setIsSubmitting(false);
     }
+    //   const handleClick = () => {
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // });
   };
 
   return (
@@ -96,90 +105,6 @@ const ContactForm = () => {
 
       <div className="relative top-0 z-10 w-screen max-w-[1320px] mx-auto px-4 py-8 flex flex-col md:flex-row gap-8 md:gap-12">
         {/* Left column - Form */}
-        {/* <div className="flex-1 ">
-          <div className="flex">
-            <div>
-              <h1 className="text-5xl font-bold mb-4">
-                It begins <span className="text-[#88b92f]">here</span>!
-              </h1>
-              <p className="mb-8 text-gray-300">
-                Fill in your details below to begin your future as a career
-                trader with Quick Funded.
-              </p>
-            </div>
-
-            <div className="absolute right-4">
-              <img
-                src="./logo.png"
-                className="text-white 
-      max-w-[150px] lg:max-w-80 md:max-w-48 sm:max-w-[150px]
-    "
-              />
-            </div>
-          </div> */}
-
-        {/* <div className="flex-1">
-          <div className="flex flex-col sm:flex-row sm:items-start relative">
-            <div className="flex-1">
-              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-                It begins <span className="text-[#88b92f]">here</span>!
-              </h1>
-              <p className="mb-8 text-gray-300">
-                Fill in your details below to begin your future as a career
-                trader with Quick Funded.
-              </p>
-            </div>
-
-            <div className="sm:absolute sm:right-0 sm:top-0 self-center sm:self-start mb-6 sm:mb-0">
-              <img
-                src="./logo.png"
-                className="w-32 sm:w-36 md:w-40 lg:w-48"
-                alt="Quick Funded Logo"
-              />
-            </div>
-          </div> */}
-
-        {/* <div className="flex-1">
-          <div className="flex flex-wrap justify-between items-start gap-4">
-            <div className="flex-1 min-w-[200px]">
-              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-                It begins <span className="text-[#88b92f]">here</span>!
-              </h1>
-              <p className="mb-8 text-gray-300">
-                Fill in your details below to begin your future as a career
-                trader with Quick Funded.
-              </p>
-            </div>
-
-            <div className="flex-shrink-0">
-              <img
-                src="./logo.png"
-                className="w-24 sm:w-32 md:w-40 lg:w-48"
-                alt="Quick Funded Logo"
-              />
-            </div>
-          </div> */}
-
-        {/* <div className="flex-1">
-          <div className="relative flex flex-wrap items-start sm:items-center sm:flex-nowrap">
-            <div className="flex-1">
-              <h1 className="text-3xl sm:text-5xl font-bold mb-4">
-                It begins <span className="text-[#88b92f]">here</span>!
-              </h1>
-              <p className="mb-8 text-gray-300">
-                Fill in your details below to begin your future as a career
-                trader with Quick Funded.
-              </p>
-            </div>
-
-            <div className="flex-shrink-0 ml-auto">
-              <img
-                src="./logo.png"
-                className="w-24 sm:w-32 md:w-[150px] lg:w-[200px]"
-                alt="Quick Funded Logo"
-              />
-            </div>
-          </div> */}
 
         <div className="flex-1">
           <div className="flex justify-between items-start">
@@ -194,13 +119,24 @@ const ContactForm = () => {
             </div>
 
             <div className="absolute right-4">
-              <img
-                src="./logo.png"
-                className="text-white 
+              <Link to="/">
+                <img
+                  src="/logo.png"
+                  alt="Home"
+                  className="text-white max-w-[150px] lg:max-w-80 md:max-w-48 sm:max-w-[150px] transition-transform hover:scale-105"
+                />
+              </Link>
+            </div>
+            {/* <div className="absolute right-4">
+              <Link to="./">
+                <img
+                  src="./logo.png"
+                  className="text-white 
       max-w-[150px] lg:max-w-80 md:max-w-48 sm:max-w-[150px]
     "
-              />
-            </div>
+                />
+              </Link>
+            </div> */}
             {/* <div className="flex-shrink-0">
               <img
                 src="./logo.png"
@@ -303,18 +239,6 @@ const ContactForm = () => {
                 </TermsAndConditionsModal>
               </label>
             </div>
-            {/* <div className="flex items-start gap-2">
-              <input
-                type="checkbox"
-                name="termsAccepted"
-                checked={formData.termsAccepted}
-                onChange={handleChange}
-                className="mt-1"
-              />
-              <label className="text-sm text-gray-300">
-                I agree to the <TermsAndConditionsModal />
-              </label>
-            </div> */}
 
             <button
               type="submit"
@@ -343,37 +267,7 @@ const ContactForm = () => {
         </div>
 
         {/* Right column - Contact */}
-        {/* <div className="flex-1 flex flex-col">
-     
-          <div className="flex mb-8 w-full">
-            <img
-              src="./moneyflow.png"
-              className="w-full max-w-[300px] mt-20 -ml-5 mx-auto"
-            />
-          </div>
-          <h2 className="text-4xl font-bold mb-4">
-            Contact <span className="text-[#88b92f]">us</span>
-          </h2>
-          <p className="text-gray-300 mb-8">
-            For questions and technical assistance on this promotion please
-            contact us via the contact information provided below.
-          </p>
 
-          <div className="space-y-4 w-full">
-            <div className="flex items-center gap-3">
-              <Phone className="text-[#88b92f]" />
-              <span>+44(0) 7307577966</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Mail className="text-[#88b92f]" />
-              <span>support@quick-funded.io</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <MapPin className="text-[#88b92f]" />
-              <span>128 City Road LONDON EC1V 2NX UNITED KINGDOM</span>
-            </div>
-          </div>
-        </div> */}
         <div className="flex-1 flex flex-col">
           <div className="flex mb-6 w-full justify-center md:justify-end ">
             <img
