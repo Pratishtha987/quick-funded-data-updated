@@ -176,8 +176,8 @@ const ContactForm = () => {
               <CountryDropdown required onCountryChange={handleCountryChange} />
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="">
+            <div className="grid  gap-4">
+              {/* <div className="">
                 <label className="block text-sm mb-2">Phone number</label>
                 <input
                   type="tel"
@@ -188,7 +188,7 @@ const ContactForm = () => {
                   className="w-full px-4 py-2 mb-3 bg-white/10 rounded-2xl border border-gray-600 text-white"
                   placeholder="Phone number"
                 />
-              </div>
+              </div> */}
 
               <div>
                 <label className="block text-sm mb-2">Account size</label>
@@ -271,7 +271,7 @@ const ContactForm = () => {
         <div className="flex-1 flex flex-col">
           <div className="flex mb-6 w-full justify-center md:justify-end ">
             <img
-              src="./moneyflow.png"
+              src="./moneyflow1.png"
               className="w-full max-w-[300px] mt-20 mx-auto md:mr-0 pt-10"
             />
           </div>

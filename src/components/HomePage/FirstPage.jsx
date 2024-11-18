@@ -2,15 +2,48 @@ import { Link } from "react-router-dom";
 
 const FirstPage = () => {
   return (
-    <div className="w-full flex flex-col overflow-hidden">
+    <div className="w-full flex flex-col bg-[#000000] overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 w-full bg-cover bg-center bg-no-repeat">
+        <div className="max-w-[1320px] bg-center absolute inset-0" />
+        <img src="./WebsiteBGL.png" className="w-full h-full object-full" />
+      </div>
+      {/* <div className="absolute inset-0 z-0">
         <img
           src="WebsiteBGL.png"
           alt="placeholder"
-          className="w-full max-h-full object-cover"
+          className="w-full h-full bg-black object-full"
         />
-      </div>
+      </div> */}
+
+      {/* <div className="absolute inset-0 w-full bg-cover bg-center bg-no-repeat">
+        <div className="max-w-[1320px] bg-center absolute inset-0" />
+        <img src="./WebsiteBGL.png" className="w-full h-full object-full " />
+      </div> */}
+
+      {/* <div className="relative w-full h-screen"> */}
+      {/* Desktop Image */}
+      {/* <div className="hidden absolute inset-0">
+        <div className="max-w-[1320px] mx-auto h-full relative">
+          <img
+            src="./RegistrationPageBG.png"
+            alt="Desktop Hero"
+            className="w-full h-full object-full"
+          />
+        </div>
+      </div> */}
+
+      {/* Mobile Image */}
+      {/* <div className=" block  absolute inset-0">
+        <div className="w-full h-full relative">
+          <img
+            src="./WebsiteBGM.png"
+            alt="Mobile Hero"
+            className="w-full h-full object-full"
+          />
+        </div>
+      </div> */}
+      {/* </div> */}
 
       <div className="relative z-10 flex-1 flex flex-col justify-between px-4 sm:px-6 lg:px-8 py-8">
         {/* Header Section */}
@@ -18,12 +51,19 @@ const FirstPage = () => {
           {/* Heading */}
           <div className="mt-4 md:mt-10">
             <h1 className="text-3xl md:text-5xl font-bold ">
-              <span className="text-white ">
-                Trade with Purpose:Profit-Driven,
+              <span
+                className="text-[#88b92f]
+                "
+              >
+                {" "}
+                Trade with Purpose:
               </span>
+              <div className="text-white">
+                {" "}
+                Profit-Driven, Community-Focused Trading
+              </div>
               <br />
-              <span className="text-[#88b92f]">Community-Focused</span>
-              <span className="text-white"> Trading</span>
+              <span className="text-white"> </span>
             </h1>
           </div>
 
@@ -47,10 +87,10 @@ const FirstPage = () => {
         <div className="flex flex-col lg:flex-row-reverse gap-8 flex-1 text-white mt-10">
           {/* "Pay when you pass" Section */}
           <div className="flex-1 lg:w-1/3 flex flex-col justify-center items-center lg:mr-10 lg:-mt-40 mt-0 mb-8 lg:mb-0">
-            <h2 className="text-4xl md:text-6xl font-bold text-center">
+            <h2 className="font-varela text-4xl md:text-6xl font-extrabold text-center">
               Pay when <span className="whitespace-nowrap">you</span>
             </h2>
-            <h2 className="text-4xl md:text-6xl font-bold text-[#cb6ce6]">
+            <h2 className="font-varela text-4xl md:text-6xl font-extrabold text-[#cb6ce6]">
               pass<span className="text-white">!</span>
             </h2>
             <p className="text-lg md:text-xl mt-6 text-center px-4 lg:px-0">
@@ -63,7 +103,7 @@ const FirstPage = () => {
           <div className="flex-2 lg:w-2/3 flex justify-center items-center lg:items-start">
             <div className="max-w-[85%] lg:max-w-lg w-full">
               <img
-                src="Packages.png"
+                src="Packages1.png"
                 alt="Money Flow Diagram"
                 className="w-full h-auto object-contain"
               />
