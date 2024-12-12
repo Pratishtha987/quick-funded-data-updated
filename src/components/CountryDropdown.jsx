@@ -8,11 +8,13 @@ function CountryDropdown({ selectedCountry, onCountryChange }) {
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
+      // .get("https://api.first.org/data/v1/countries")
       .then((response) => {
         const countryList = response.data
           .map((country) => country.name.common)
           .sort();
         setCountries(countryList);
+        console.log(response);
       })
       .catch((error) => console.error("Error fetching countries:", error));
   }, []);

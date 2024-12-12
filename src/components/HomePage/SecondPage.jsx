@@ -53,17 +53,17 @@ const SecondPage = () => {
             {/* Social Icons */}
             <div className="flex gap-6 justify-center lg:justify-start">
               <div>
-                <a href="https://www.facebook.com/people/QuickFunded/61563946089420/?mibextid=ZbWKwL">
+                <a href="https://www.facebook.com/people/QuickFunded/61563946089420/">
                   <img src="facebook.png" className="w-11" />
                 </a>
               </div>
               <div>
-                <a href="https://www.instagram.com/quick_funded/">
+                <a href="https://www.instagram.com/quickfundeduk?igsh=OHMyN29yNXRndHVt">
                   <img src="instagram.png" className="w-11" />
                 </a>
               </div>
               <div>
-                <a href="https://discord.com/invite/yHsWZdTY">
+                <a href="https://discord.gg/MNbtsyTyDx">
                   <img src="discord.png" className="w-12" />
                 </a>
               </div>
